@@ -1,0 +1,66 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.8
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/bsc-wdc/dislib:
+      branch: master
+      repo: https://github.com/bsc-wdc/dislib
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/bsc-wdc/dislib git:
+        commands:
+        - /usr/bin/env sh .sqa/script.pretty-persimmon-gopher.sh
+        container: qc.acc_hasty-goldenrod-rabbit
+  QC.Doc:
+    repos:
+      github.com/bsc-wdc/dislib find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.cheeky-periwinkle-monkey.sh
+        container: qc.doc_wimpy-taupe-hound
+      github.com/bsc-wdc/dislib git:
+        commands:
+        - /usr/bin/env sh .sqa/script.gummy-apricot-clam.sh
+        container: qc.doc_ready-platinum-okapi
+      github.com/bsc-wdc/dislib markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.woozy-brass-chipmunk.sh
+        container: qc.doc_geeky-smalt-saola
+      github.com/bsc-wdc/dislib restructuredtext-lint:
+        commands:
+        - /usr/bin/env sh .sqa/script.breezy-emerald-ragdoll.sh
+        container: qc.doc_jumpy-seashell-opossum
+  QC.Lic:
+    repos:
+      github.com/bsc-wdc/dislib licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.skimpy-sepia-kangaroo.sh
+        container: qc.lic_homey-cinnabar-gibbon
+  QC.Sec:
+    repos:
+      github.com/bsc-wdc/dislib bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.queasy-magnolia-mayfly.sh
+        container: qc.sec_snappy-silver-macaw
+  QC.Sty:
+    repos:
+      github.com/bsc-wdc/dislib flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.wheezy-mauve-panda.sh
+        container: qc.sty_nerdy-puce-albatross
+      github.com/bsc-wdc/dislib hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.crappy-aquamarine-booby.sh
+        container: qc.sty_woozy-asparagus-meerkat
+  QC.Ver:
+    repos:
+      github.com/bsc-wdc/dislib get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.gamy-eggplant-civet.sh
+        container: qc.ver_scanty-flax-grasshopper
+timeout: 5400
