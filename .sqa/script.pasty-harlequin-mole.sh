@@ -1,4 +1,4 @@
 (
-cd github.com/bsc-wdc/dislib &&
+cd github.com/eosc-synergy/dislib &&
     git rev-parse --is-inside-work-tree
 )
