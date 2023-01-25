@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-pear-spoonbill.sh
-        container: qc.acc_thirsty-orchid-snake
+        - /usr/bin/env sh .sqa/script.surly-indigo-warthog.sh
+        container: qc.acc_jumpy-zucchini-goose
   QC.Doc:
     repos:
       github.com/eosc-synergy/dislib find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-cobalt-cuttlefish.sh
-        container: qc.doc_cheeky-tan-starfish
+        - /usr/bin/env sh .sqa/script.bumpy-cornflower-mongoose.sh
+        container: qc.doc_pretty-plum-russel
       github.com/eosc-synergy/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-smalt-cow.sh
-        container: qc.doc_woozy-olivine-magpie
+        - /usr/bin/env sh .sqa/script.muggy-corn-mammoth.sh
+        container: qc.doc_shaky-chestnut-woodpecker
       github.com/eosc-synergy/dislib markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-platinum-mayfly.sh
-        container: qc.doc_goopy-violet-turtle
+        - /usr/bin/env sh .sqa/script.whiny-magenta-grouse.sh
+        container: qc.doc_wimpy-teal-ostrich
       github.com/eosc-synergy/dislib restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-periwinkle-corgi.sh
-        container: qc.doc_boozy-ochre-loon
+        - /usr/bin/env sh .sqa/script.cranky-plum-goat.sh
+        container: qc.doc_randy-ecru-liger
   QC.Lic:
     repos:
       github.com/eosc-synergy/dislib licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-rose-warthog.sh
-        container: qc.lic_craggy-green-pinscher
+        - /usr/bin/env sh .sqa/script.freaky-violet-molly.sh
+        container: qc.lic_squirrely-white-leopard
   QC.Sec:
     repos:
       github.com/eosc-synergy/dislib bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-burgundy-urchin.sh
-        container: qc.sec_freaky-orange-bat
+        - /usr/bin/env sh .sqa/script.scaly-ultramarine-dollar.sh
+        container: qc.sec_sunny-champagne-dog
   QC.Sty:
     repos:
       github.com/eosc-synergy/dislib flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-vermilion-lion.sh
-        container: qc.sty_seedy-bistre-heron
+        - /usr/bin/env sh .sqa/script.snappy-carmine-ant.sh
+        container: qc.sty_trippy-tan-capybara
       github.com/eosc-synergy/dislib hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-wheat-vole.sh
-        container: qc.sty_breezy-smalt-gar
+        - /usr/bin/env sh .sqa/script.seedy-ochre-centipede.sh
+        container: qc.sty_clammy-violet-tortoise
   QC.Ver:
     repos:
       github.com/eosc-synergy/dislib get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-ruby-toucan.sh
-        container: qc.ver_dorky-salmon-eleuth
+        - /usr/bin/env sh .sqa/script.scaly-ruby-hedgehog.sh
+        container: qc.ver_gummy-heliotrope-fish
 timeout: 5400
