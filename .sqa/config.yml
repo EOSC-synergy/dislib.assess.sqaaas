@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-flax-sheep.sh
-        container: qc.acc_hazy-puce-loon
+        - /usr/bin/env sh .sqa/script.crappy-mauve-ocelot.sh
+        container: qc.acc_clammy-cardinal-harrier
   QC.Doc:
     repos:
       github.com/eosc-synergy/dislib find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-burgundy-ostrich.sh
-        container: qc.doc_wheezy-harlequin-octopus
+        - /usr/bin/env sh .sqa/script.woozy-olivine-alligator.sh
+        container: qc.doc_grumpy-amethyst-eagle
       github.com/eosc-synergy/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-razzmatazz-lizard.sh
-        container: qc.doc_scanty-fuchsia-mandrill
+        - /usr/bin/env sh .sqa/script.dorky-champagne-rottweiler.sh
+        container: qc.doc_silly-chocolate-corgi
       github.com/eosc-synergy/dislib markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-champagne-kudu.sh
-        container: qc.doc_baggy-ochre-guppy
+        - /usr/bin/env sh .sqa/script.homely-salmon-chow.sh
+        container: qc.doc_snippy-maroon-zorse
       github.com/eosc-synergy/dislib restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-champagne-caterpillar.sh
-        container: qc.doc_shabby-sangria-ant
+        - /usr/bin/env sh .sqa/script.snippy-salmon-zonkey.sh
+        container: qc.doc_snappy-peach-hyena
   QC.Lic:
     repos:
       github.com/eosc-synergy/dislib licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-linen-tarantula.sh
-        container: qc.lic_sleepy-cream-mammoth
+        - /usr/bin/env sh .sqa/script.hazy-goldenrod-cuttlefish.sh
+        container: qc.lic_nippy-firebrick-binturong
   QC.Sec:
     repos:
       github.com/eosc-synergy/dislib bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-vermilion-hamster.sh
-        container: qc.sec_paltry-salmon-gorilla
+        - /usr/bin/env sh .sqa/script.skinny-orange-goose.sh
+        container: qc.sec_ready-crimson-frise
   QC.Sty:
     repos:
       github.com/eosc-synergy/dislib flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-amethyst-reindeer.sh
-        container: qc.sty_sunny-vermilion-civet
+        - /usr/bin/env sh .sqa/script.smelly-ultramarine-havanese.sh
+        container: qc.sty_foggy-malachite-nightingale
       github.com/eosc-synergy/dislib hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-crimson-hedgehog.sh
-        container: qc.sty_gimpy-bistre-elephant
+        - /usr/bin/env sh .sqa/script.stealthy-red-bat.sh
+        container: qc.sty_homey-charcoal-ragdoll
   QC.Ver:
     repos:
       github.com/eosc-synergy/dislib get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-indigo-cuscus.sh
-        container: qc.ver_skanky-fuchsia-toucan
+        - /usr/bin/env sh .sqa/script.fuzzy-emerald-squirrel.sh
+        container: qc.ver_cloudy-turquoise-dormouse
 timeout: 5400
