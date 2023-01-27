@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/bsc-wdc/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-viridian-guppy.sh
-        container: qc.acc_flabby-bistre-wasp
+        - /usr/bin/env sh .sqa/script.sunny-champagne-tiger.sh
+        container: qc.acc_sickly-malachite-eleuth
   QC.Doc:
     repos:
       github.com/bsc-wdc/dislib find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-flax-alligator.sh
-        container: qc.doc_boozy-thistle-eleuth
+        - /usr/bin/env sh .sqa/script.sleazy-taupe-woodlouse.sh
+        container: qc.doc_dorky-gamboge-moth
       github.com/bsc-wdc/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-pumpkin-mandrill.sh
-        container: qc.doc_surly-corn-bombay
+        - /usr/bin/env sh .sqa/script.leaky-pink-akbash.sh
+        container: qc.doc_hilly-pumpkin-sponge
       github.com/bsc-wdc/dislib markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-bistre-bat.sh
-        container: qc.doc_cozy-amethyst-indri
+        - /usr/bin/env sh .sqa/script.messy-orange-cichlid.sh
+        container: qc.doc_stealthy-cinnabar-bird
       github.com/bsc-wdc/dislib restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-linen-lobster.sh
-        container: qc.doc_beady-peach-deer
+        - /usr/bin/env sh .sqa/script.beady-celadon-albatross.sh
+        container: qc.doc_pretty-apricot-reindeer
   QC.Lic:
     repos:
       github.com/bsc-wdc/dislib licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-white-markhor.sh
-        container: qc.lic_skinny-fuchsia-guppy
+        - /usr/bin/env sh .sqa/script.clammy-copper-chipmunk.sh
+        container: qc.lic_ready-platinum-echidna
   QC.Sec:
     repos:
       github.com/bsc-wdc/dislib bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-mustard-cockroach.sh
-        container: qc.sec_cranky-pumpkin-quoll
+        - /usr/bin/env sh .sqa/script.flabby-magnolia-seal.sh
+        container: qc.sec_stealthy-gold-labradoodle
   QC.Sty:
     repos:
       github.com/bsc-wdc/dislib flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-coral-urchin.sh
-        container: qc.sty_flabby-grey-lobster
+        - /usr/bin/env sh .sqa/script.nippy-buff-hornet.sh
+        container: qc.sty_baggy-gold-beaver
       github.com/bsc-wdc/dislib hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-smalt-dragonfly.sh
-        container: qc.sty_sleepy-firebrick-fowl
+        - /usr/bin/env sh .sqa/script.skinny-amber-oyster.sh
+        container: qc.sty_ugly-olivine-ferret
   QC.Ver:
     repos:
       github.com/bsc-wdc/dislib get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-ecru-gopher.sh
-        container: qc.ver_woozy-ecru-schnauzer
+        - /usr/bin/env sh .sqa/script.cozy-green-orangutan.sh
+        container: qc.ver_flabby-cornflower-toad
 timeout: 5400
