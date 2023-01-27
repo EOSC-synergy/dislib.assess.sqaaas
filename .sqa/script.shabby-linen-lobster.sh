@@ -1,4 +1,4 @@
 (
-cd github.com/eosc-synergy/dislib &&
+cd github.com/bsc-wdc/dislib &&
     rst-lint --level warning --format json .
 )

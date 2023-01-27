@@ -4,63 +4,63 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.8
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/eosc-synergy/dislib:
+    github.com/bsc-wdc/dislib:
       branch: master
-      repo: https://github.com/eosc-synergy/dislib
+      repo: https://github.com/bsc-wdc/dislib
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/eosc-synergy/dislib git:
+      github.com/bsc-wdc/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-firebrick-impala.sh
-        container: qc.acc_snappy-vermilion-meerkat
+        - /usr/bin/env sh .sqa/script.sloppy-viridian-guppy.sh
+        container: qc.acc_flabby-bistre-wasp
   QC.Doc:
     repos:
-      github.com/eosc-synergy/dislib find_doc_files.py:
+      github.com/bsc-wdc/dislib find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-magnolia-mastiff.sh
-        container: qc.doc_gimpy-chartreuse-koala
-      github.com/eosc-synergy/dislib git:
+        - /usr/bin/env sh .sqa/script.nerdy-flax-alligator.sh
+        container: qc.doc_boozy-thistle-eleuth
+      github.com/bsc-wdc/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-pumpkin-cuttlefish.sh
-        container: qc.doc_thirsty-lilac-hare
-      github.com/eosc-synergy/dislib markdownlint:
+        - /usr/bin/env sh .sqa/script.freaky-pumpkin-mandrill.sh
+        container: qc.doc_surly-corn-bombay
+      github.com/bsc-wdc/dislib markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-violet-orangutan.sh
-        container: qc.doc_paltry-thistle-ibis
-      github.com/eosc-synergy/dislib restructuredtext-lint:
+        - /usr/bin/env sh .sqa/script.messy-bistre-bat.sh
+        container: qc.doc_cozy-amethyst-indri
+      github.com/bsc-wdc/dislib restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-cornflower-vole.sh
-        container: qc.doc_snippy-platinum-gharial
+        - /usr/bin/env sh .sqa/script.shabby-linen-lobster.sh
+        container: qc.doc_beady-peach-deer
   QC.Lic:
     repos:
-      github.com/eosc-synergy/dislib licensee:
+      github.com/bsc-wdc/dislib licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-violet-walrus.sh
-        container: qc.lic_messy-magenta-cattle
+        - /usr/bin/env sh .sqa/script.breezy-white-markhor.sh
+        container: qc.lic_skinny-fuchsia-guppy
   QC.Sec:
     repos:
-      github.com/eosc-synergy/dislib bandit:
+      github.com/bsc-wdc/dislib bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-denim-fly.sh
-        container: qc.sec_snappy-pumpkin-toucan
+        - /usr/bin/env sh .sqa/script.gamy-mustard-cockroach.sh
+        container: qc.sec_cranky-pumpkin-quoll
   QC.Sty:
     repos:
-      github.com/eosc-synergy/dislib flake8:
+      github.com/bsc-wdc/dislib flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-fuchsia-whale.sh
-        container: qc.sty_randy-jade-ocelot
-      github.com/eosc-synergy/dislib hadolint:
+        - /usr/bin/env sh .sqa/script.crappy-coral-urchin.sh
+        container: qc.sty_flabby-grey-lobster
+      github.com/bsc-wdc/dislib hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-gold-orangutan.sh
-        container: qc.sty_flimsy-amber-indri
+        - /usr/bin/env sh .sqa/script.pretty-smalt-dragonfly.sh
+        container: qc.sty_sleepy-firebrick-fowl
   QC.Ver:
     repos:
-      github.com/eosc-synergy/dislib get_git_tags.py:
+      github.com/bsc-wdc/dislib get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-bistre-dog.sh
-        container: qc.ver_tasty-copper-quokka
+        - /usr/bin/env sh .sqa/script.clammy-ecru-gopher.sh
+        container: qc.ver_woozy-ecru-schnauzer
 timeout: 5400
