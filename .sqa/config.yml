@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.8
+      branch: release/1.7.9
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/bsc-wdc/dislib:
       branch: master
@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/bsc-wdc/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-champagne-tiger.sh
-        container: qc.acc_sickly-malachite-eleuth
+        - /usr/bin/env sh .sqa/script.beady-heliotrope-mole.sh
+        container: qc.acc_flimsy-silver-ant
   QC.Doc:
     repos:
       github.com/bsc-wdc/dislib find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-taupe-woodlouse.sh
-        container: qc.doc_dorky-gamboge-moth
+        - /usr/bin/env sh .sqa/script.flaky-charcoal-okapi.sh
+        container: qc.doc_breezy-plum-drever
       github.com/bsc-wdc/dislib git:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-pink-akbash.sh
-        container: qc.doc_hilly-pumpkin-sponge
+        - /usr/bin/env sh .sqa/script.wheezy-buff-macaw.sh
+        container: qc.doc_frumpy-fuchsia-seahorse
       github.com/bsc-wdc/dislib markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-orange-cichlid.sh
-        container: qc.doc_stealthy-cinnabar-bird
+        - /usr/bin/env sh .sqa/script.bluesy-copper-monkey.sh
+        container: qc.doc_greasy-aqua-chihuahua
       github.com/bsc-wdc/dislib restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-celadon-albatross.sh
-        container: qc.doc_pretty-apricot-reindeer
+        - /usr/bin/env sh .sqa/script.baggy-lavender-bombay.sh
+        container: qc.doc_blurry-firebrick-forest
   QC.Lic:
     repos:
       github.com/bsc-wdc/dislib licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-copper-chipmunk.sh
-        container: qc.lic_ready-platinum-echidna
+        - /usr/bin/env sh .sqa/script.blurry-orchid-numbat.sh
+        container: qc.lic_sunny-tan-bongo
   QC.Sec:
     repos:
       github.com/bsc-wdc/dislib bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-magnolia-seal.sh
-        container: qc.sec_stealthy-gold-labradoodle
+        - /usr/bin/env sh .sqa/script.pokey-turquoise-wasp.sh
+        container: qc.sec_cozy-beige-beagle
   QC.Sty:
     repos:
       github.com/bsc-wdc/dislib flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-buff-hornet.sh
-        container: qc.sty_baggy-gold-beaver
+        - /usr/bin/env sh .sqa/script.surly-ecru-labradoodle.sh
+        container: qc.sty_freaky-champagne-setter
       github.com/bsc-wdc/dislib hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-amber-oyster.sh
-        container: qc.sty_ugly-olivine-ferret
+        - /usr/bin/env sh .sqa/script.baggy-ruby-deer.sh
+        container: qc.sty_stuffy-violet-octopus
   QC.Ver:
     repos:
       github.com/bsc-wdc/dislib get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-green-orangutan.sh
-        container: qc.ver_flabby-cornflower-toad
+        - /usr/bin/env sh .sqa/script.tasty-maroon-squirt.sh
+        container: qc.ver_homely-cornflower-balinese
 timeout: 5400
