@@ -1,4 +1,4 @@
 (
-cd github.com/bsc-wdc/dislib &&
+cd github.com/EOSC-synergy/dislib &&
     find_doc_files.py --file_type all
 )
